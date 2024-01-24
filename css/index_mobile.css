@@ -1,0 +1,305 @@
+@media all and (max-width: 800px) {
+    * {margin: 0; padding: 0;}
+    body {font-size: 10pt; color: #333;}
+    header {
+        position: relative;
+        clear: both;
+        width: 340px;
+        height: 130px;
+        margin: 0 auto;
+        background: #333;
+    }
+    /*상단 1행*/
+    .header_box_all {
+        position: relative;
+        clear: both;
+        width: 340px;
+        height: 130px;
+        background: #ddd;
+    }
+        .header_box_all > .header_box_01 {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 50px;
+            line-height: 50px;
+            top: 10px;
+        }
+
+        #header_box_01_up {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 30px;
+        }
+            #sec_global {
+                position: relative;
+                float: left;
+                width: 170px;
+                height: 30px;
+                line-height: 30px;
+            }
+                select {
+                    position: relative;
+                    float: left;
+                    width: 100px;
+                    height: 30px;
+                }
+                option {
+                    width: 50px;
+                    height: 30px;
+                }
+            #ins_all {
+                position: relative;
+                float: left;
+                width: 170px;
+                height: 30px;
+            }
+            #ins_icon {
+                position: relative;
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin-left: 10px;
+            }
+        #header_box_01_down {
+            display: none;
+        }
+        /*1행 logo*/
+        .header_box_all > .header_box_02 {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 50px;
+        }
+        .header_box_all > .header_box_03 {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 30px;
+            background: #f60;
+        }
+            #header_box_03_up {
+                position: relative;
+                clear: both;
+                width: 340px;
+                height: 30px;
+            }
+                #txt_join, #txt_id, #txt_basket, #txt_mypage {
+                    position: relative;
+                    float: left;
+                    width: 85px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 0.8rem;
+                }
+
+            #header_box_03_down {
+                display: none;
+            }
+        /*여백삭제*/
+        .gap_1400_10 {
+            display: none;
+        }
+
+        /*메인메뉴 9개*/
+        .main_menu_all {
+            display: flex;
+            flex-flow: row wrap;
+            width: 340px;
+            height: 90px;
+            margin: 0 auto;
+        }
+            .main_menu_all #menu_each {
+                width: 110px;
+            }
+            #menu_01_over:hover {
+                content: url(../img/main_menu_01_02.jpg);
+            }
+
+            .gap_1400_10 {
+                display: none;
+            }
+        .main_img_all {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 340px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+            .main_img_big {
+                display: none;
+            }
+            .main_img_small {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 340px;
+                height: 340px;
+                margin-top: 10px;
+                z-index: 2;
+
+                -webkit-animation-duration: 2s;
+                -webkit-animation-name: m_01;
+                -webkit-animation-iteration-count: 1;
+            }
+            @-webkit-keyframes m_01 {
+                0% {left: 50px; top: 50px; opacity: 50%;}
+                100% {left: 0; top: 0; opacity: 100%;}
+            }
+            .gap_1400_80 {
+                display: none;
+            }
+            .gap_m_340_10 {
+                position: relative;
+                clear: both;
+                width: 100%;
+                height: 10px;
+                background: #ddd;
+            }
+            /*상단 이미지 4개 제작*/
+            section.sec_01_all {
+                position: relative;
+                clear: both;
+                width: 340px;
+                height: 1360px;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+                .sec_01_all > .sec_01_box_all {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    width: 340px;
+                    height: 1360px;
+                }
+                    .sec_01_box_all > #sec_01_box_each {
+                        display: flex;
+                        flex-flow: row wrap;
+                        width: 340px;
+                        height: 340px;
+                    }
+                    #sec_01_box_img {
+                        width: 340px;
+                        height: 280px;
+                    }
+                    #sec_01_font_01 {
+                        width: 340px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
+                    #sec_01_font_02 {
+                        width: 340px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 1rem;
+                    }
+        .gap_m_340_80 {
+            width: 340px;
+            height: 80px;
+        }
+        /*trend pick 코너-----------------------------------*/
+        section.sec_02_all {
+            width: 340px;
+        }
+            .sec_02_title {
+                width: 340px;
+            }
+                .sec_02_title_font_01 {
+                    width: 340px;
+                    font-size: 3rem;
+                    margin: 0 auto;
+                }
+                .sec_02_title_font_02 {
+                    width: 340px;
+                }
+            /*박스 시작*/
+        .sec_02_box_all {
+            width: 340px;
+            overflow: hidden;
+        }
+            #sec_02_box_each {
+                margin: 0 38px;
+            }
+            .sec_02_box_left {
+                left: -4px;
+                width: 25px;
+                height: 40px;
+            }
+            .sec_02_box_right {
+                right: -4px;
+                width: 25px;
+                height: 40px;
+            }
+        /*WEEKLY BEST 제목--------------*/
+        section.product_row_all {
+            display: grid;
+            grid-template-columns: 170px 170px;
+            width: 340px;
+            height: 600px;
+        }
+            .product_row_all > .product_col_each {
+                width: 165px;
+                height: 275px;
+                margin-bottom: 20px;
+            }
+            .product_col_each > #p_box_img {
+                width: 165px;
+                height: 165px;
+            }
+            .product_col_each > #p_box_font_all {
+                width: 165px;
+            }
+            /*폰트 사이즈 전체*/
+            #p_box_font_01 {
+                width: 165px;
+                height: 40px;
+                line-height: 18px;
+                font-size: 1rem;
+                color: #000;
+                margin-top: 10px;
+            }
+            #p_box_font_02 {
+                width: 165px;
+                height: 15px;
+                line-height: 15px;
+                font-size: 0.8rem;
+                color: #999;
+            }
+            #p_box_font_03 {
+                width: 165px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 1rem;
+                font-weight: bold;
+                color: #000;
+            }
+                #p_box_font_03>small {
+                    color: #666;
+                }
+            #p_box_font_04 {
+                width: 165px;
+                height: 15px;
+                line-height: 15px;
+                font-size: 0.8rem;
+                color: #333;
+            }
+        /*footer---------------------------*/
+        .footer_top {
+            width: 340px;
+            height: auto;
+            flex-flow: row wrap;
+        }
+            .footer_top_01 {
+                width: 340px;
+                flex-flow: row wrap;
+            }
+            .footer_top_02 {
+                width: 340px;
+                flex-flow: row wrap;
+            }
+}
